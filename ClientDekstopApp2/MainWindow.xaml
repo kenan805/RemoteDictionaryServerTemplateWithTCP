@@ -1,0 +1,33 @@
+﻿<Window x:Class="ClientDekstopApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientDekstopApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Button FontSize="22" HorizontalAlignment="Right" Content="Connect"
+                    VerticalAlignment="Center" Padding="5" Margin="20" Click="Connect_Click"/>
+        </Grid>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBox x:Name="txbUsername" FontSize="20" HorizontalAlignment="Center"
+                 VerticalAlignment="Center" Height="41.3" VerticalContentAlignment="Center"
+                 Width="250"/>
+            <Button FontSize="20" Content="Send"
+                     Padding="5" Margin="20" Click="Send_Click"/>
+        </StackPanel>
+
+        <TextBlock Text=">>> Client app 2 &lt;&lt;&lt;" HorizontalAlignment="Center"
+                   VerticalAlignment="Top" FontSize="28"
+                   FontWeight="DemiBold"/>
+    </Grid>
+</Window>
