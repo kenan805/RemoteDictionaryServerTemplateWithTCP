@@ -1,6 +1,6 @@
 # RemoteDictionaryServerTemplateWithTCP
 
-Database script
+Database script 
 USE [UsersRedis]
 GO
 /****** Object:  Table [dbo].[Users]    Script Date: 03/02/2022 02:46:14 ******/
